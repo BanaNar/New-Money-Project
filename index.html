@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<title> Index </title>
+		<title> Login </title>
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -50,6 +50,20 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
   opacity: 1;
   right: 0;
 }
+
+.container {
+    position: relative;
+}
+
+.center {
+    position: relative;
+    left: 0;
+    top: 300px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
 </style>
 	<script type="text/javascript">
 
@@ -82,11 +96,18 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
   		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
   		</a>
 	</div>
+
+<div class="container">
+  <div class="center">
+
 	<form action="profile.html" method="post" onsubmit="return check_info();">
-		Username: <input type="text" name="username" id="username"/>
-		Password: <input type="password" name="password" id="password"/>
-		<button class="button" style="vertical-align:middle" type="submit" value="Login"><span>Login</span></button>
+		<p>Username: <input type="text" name="username" id="username"/></p>
+		<p>Password:    <input type="password" name="password" id="password"/></p>
+		<p><button class="button" style="vertical-align:middle" type="submit" value="Login"><span>Login</span></button></p>
 	</form>
+
+  </div>
+  </div>
 
 </body>
 </html>
