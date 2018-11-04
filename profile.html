@@ -34,13 +34,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
  </div>
 </div>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">My account</a>
-</div>
 
 <!-- Page Container -->
 <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
@@ -117,10 +110,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
     
 
     <div class="w3-container">
-    <h5>New Money Points</h5>
+    <h5>My Progress</h5>
     <p>Credit Score</p>
     <div class="w3-grey">
-      <div class="w3-container w3-center w3-padding w3- w3-light-green" style="width:25%">+25%</div>
+      <div class="w3-container w3-center w3-padding w3- w3-light-green" style="width:25%">25%</div>
     </div>
 
     <p>Investment</p>
@@ -164,7 +157,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
         <img src="http://images5.fanpop.com/image/photos/31400000/Demon-Deacon-wake-forest-demon-deacons-31413102-432-540.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
         <span class="w3-right w3-opacity">1 min</span>
-        <h4>Wake Forest Fin Club</h4><br>
+      
+        <form action="wfuprofile.html" method="post" onsubmit="return check_info();">
+           <h4>Wake Forest Fin Club</h4>
+        </form>
+
         <hr class="w3-clear">
         <h5>Time Value of Money </h5>
         <p>One dollar today = one dollar tomorrow?? </p>
@@ -218,7 +215,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
         <iframe width="400" height="315" src="https://www.youtube.com/embed/CCCILZ1FqNs">
         </iframe>
 
-
+        <object width="400" height="50" data="bookmark.swf"></object>
+        
         <div>
         <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
         <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
@@ -419,4 +417,5 @@ function openNav() {
 
 </body>
 </html> 
+ 
 
