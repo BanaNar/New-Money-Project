@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="http://www.crwflags.com/art/college/wakeforest96067b.jpg" style="width:60%;" class="w3-round"><br><br>
+    <h4><b>Wake Forest University</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="http://www.crwflags.com/art/college/wakeforest96067b.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Wake Forest Videos</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+    <iframe style="width:100%, height:100%"  src="https://www.youtube.com/embed/WusHqB5YmIw"> </iframe>
+      <div class="w3-container w3-white">
+        <p><b>Credit score, what? Why? How?</b></p>
+        <p>A number assigned to a person that indicates to lenders their capacity to repay a loan.</p>
+      </div>
+    </div>
+    
+    <div class="w3-third w3-container w3-margin-bottom">
+      <iframe style="width:100%, height:100%"  src="https://www.youtube.com/embed/L-sVXKNtAFM"> </iframe>
+      <div class="w3-container w3-white">
+        <p><b>Mortgage</b></p>
+        <p>A conveyance of or lien against property (as for securing a loan) that becomes void upon payment or performance according to stipulated terms. </p>
+      </div>
+    </div>
+    
+    <div class="w3-third w3-container">
+      <iframe style="width:100%, height:100%"  src="https://www.youtube.com/embed/CCCILZ1FqNs"> </iframe>
+      <div class="w3-container w3-white">
+        <p><b>Intellectual Property</b></p>
+        <p>Intellectual property (IP) is a term referring to creations of the intellect for which a monopoly is assigned to designated owners by law.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <iframe style="width:100%, height:100%"  src="https://www.youtube.com/embed/sJD4a9CCy2o"> </iframe>
+      <div class="w3-container w3-white">
+        <p><b>Intangible Assets</b></p>
+        <p>An intangible asset is a non-physical asset having a useful life greater than one year. These assets are generally recognized as part of an acquisition, where the acquirer is allowed to assign some portion of the purchase price to acquired intangible assets.</p>
+      </div>
+    </div>
+    
+    <div class="w3-third w3-container w3-margin-bottom">
+      <iframe style="width:100%, height:100%"  src="https://www.youtube.com/embed/LAI9h1WV52Q"> </iframe>
+      <div class="w3-container w3-white">
+        <p><b>What is Time Value Of Money?</b></p>
+        <p>The time value of money is the value at which you are indifferent to receiving the money today or one year from today. If the amount is $115, then the time value of money over the coming year is $15. If the amount is $110, then the time value is $10.</p>
+      </div>
+    </div>
+    
+    <div class="w3-third w3-container">
+      <iframe style="width:100%, height:100%"  src="https://www.youtube.com/embed/5xoLMaM8SIs"> </iframe>
+      <div class="w3-container w3-white">
+        <p><b>What is Depreciation?</b></p>
+        <p>Depreciation is any method of allocating such net cost to those periods in which the organization is expected to benefit from use of the asset. The asset is referred to as a depreciable asset.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+    
+
+    <h4>Relavant Books for Advanced Learning</h4>
+    <!-- Ads -->   
+    <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">  
+          <li class="w3-black w3-xlarge w3-padding-24">Recommended Book</li>
+           <li class="w3-padding-15">
+          <img src="https://d2i5t58cb8fkm0.cloudfront.net/wp-content/uploads/2017/02/23082412/url.jpg" style="width:100%" class="w3-hover-opacity" >   
+          <li class="w3-light-grey w3-padding-8">
+<a href="https://www.amazon.com/Total-Money-Makeover-Classic-Financial/dp/1595555277/ref=sr_1_3?s=books&ie=UTF8&qid=1541353079&sr=1-3&keywords=financial+book"><button class="w3-button w3-teal w3-padding-large w3-hover-black" >Purchase </button> </a>                      
+         </li>
+        </ul>
+      </div>   
+      
+ 
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">  
+          <li class="w3-black w3-xlarge w3-padding-24">Recommended Book</li>
+           <li class="w3-padding-15">
+          <img src="https://7habitsstore.com/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/7/h/7h_25th_anniversary.jpg" style="width:100%" class="w3-hover-opacity"> 
+          <li class="w3-light-grey w3-padding-14">
+<a href="https://www.amazon.com/Habits-Highly-Effective-People-Powerful/dp/1451639619?ref_=Oct_TopRatedC_2717_3&pf_rd_p=21e3ebd5-38cf-51ab-ae66-d91203210969&pf_rd_s=merchandised-search-6&pf_rd_t=101&pf_rd_i=2717&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=QSW61S4GH6N16HBDCN1Q&pf_rd_r=QSW61S4GH6N16HBDCN1Q&pf_rd_p=21e3ebd5-38cf-51ab-ae66-d91203210969"><button class="w3-button w3-teal w3-padding-large w3-hover-black" >Purchase </button> </a>                 
+         </li>
+        </ul>
+      </div>
+      
+
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">  
+          <li class="w3-black w3-xlarge w3-padding-24">Recommended Book</li>
+           <li class="w3-padding-15">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81qW97ndkvL.jpg" style="width:100%" class="w3-hover-opacity">   
+          <li class="w3-light-grey w3-padding-14">
+<a href="https://www.amazon.com/4-Hour-Workweek-Escape-Live-Anywhere/dp/0307465357/ref=sr_1_2?s=books&srs=2717&ie=UTF8&qid=1541356390&sr=1-2"><button class="w3-button w3-teal w3-padding-large w3-hover-black" >Purchase </button> </a>            
+         </li>
+        </ul>
+      </div>
+      </div>
+      </div>
+    
+  
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>email@wfu.edu</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Winston Salem, US</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>xxx-xxx-xxx</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  
+  
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
