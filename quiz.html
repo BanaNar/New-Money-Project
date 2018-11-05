@@ -2,30 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Quiz</title>
-    <!-- jquery for maximum compatibility -->
+    <title> Quiz </title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
-    /** Simple JavaScript Quiz
-     * version 0.1.0
-     * http://journalism.berkeley.edu
-     * created by: Jeremy Rue @jrue
-     *
-     * Copyright (c) 2013 The Regents of the University of California
-     * Released under the GPL Version 2 license
-     * http://www.opensource.org/licenses/gpl-2.0.php
-     * This program is distributed in the hope that it will be useful, but
-     * WITHOUT ANY WARRANTY; without even the implied warranty of
-     * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-     */
-
+   
     var quiztitle = "Are you ready for the Real Life Challenge?";
-
-    /**
-    * Set the information about your questions here. The correct answer string needs to match
-    * the correct choice exactly, as it does string matching. (case sensitive)
-    *
-    */
+        
     var quiz = [
         {
             "question"      :   "Q1: If you purchase a bond and interest rates rise, what will happen to the price of the bond?",
@@ -67,25 +49,15 @@
 
     ];
 
-
-    /******* No need to edit below this line *********/
     var currentquestion = 0, score = 0, submt=true, picked;
 
     jQuery(document).ready(function($){
 
-        /**
-         * HTML Encoding function for alt tags and attributes to prevent messy
-         * data appearing inside tag attributes.
-         */
+       
         function htmlEncode(value){
           return $(document.createElement('div')).text(value).html();
         }
 
-        /**
-         * This will add the individual choices for each question to the ul#choice-block
-         *
-         * @param {choices} array The choices from each question
-         */
         function addChoices(choices){
             if(typeof choices !== "undefined" && $.type(choices) == "array"){
                 $('#choice-block').empty();
@@ -95,9 +67,6 @@
             }
         }
 
-        /**
-         * Resets all of the fields to prepare for next question
-         */
         function nextQuestion(){
             submt = true;
             $('#explanation').empty();
@@ -116,11 +85,6 @@
             setupButtons();
         }
 
-        /**
-         * After a selection is submitted, checks if its the right answer
-         *
-         * @param {choice} number The li zero-based index of the choice picked
-         */
         function processQuestion(choice){
             if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']){
                 $('.choice').eq(choice).css({'background-color':'#50D943'});
@@ -141,9 +105,6 @@
             })
         }
 
-        /**
-         * Sets up the event listeners for each button.
-         */
         function setupButtons(){
             $('.choice').on('mouseover', function(){
                 $(this).css({'background-color':'#e1e1e1'});
@@ -178,9 +139,7 @@
             $(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(Math.round(score/quiz.length * 100) + '% Likely to survive in the actual financial world').insertAfter('#question');
         }
 
-        /**
-         * Runs the first time and creates all of the elements for the quiz
-         */
+       
         function init(){
             //add title
             if(typeof quiztitle !== "undefined" && $.type(quiztitle) === "string"){
