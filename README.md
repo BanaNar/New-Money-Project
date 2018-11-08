@@ -1,1 +1,1 @@
-http://New-Money-Project.github.io
+http://NewMoneyProject.github.io
