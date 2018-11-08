@@ -1,8 +1,8 @@
 http://NewMoneyProject.github.io
 
-<b><h>User Guide for New Money site</h></b>
+<b><h>User Guide for New Money</h></b>
 
-Hello, welcome to New Money App.
+Hello, welcome to New Money Platform.
 
 To test our app, please do the following steps.
 
@@ -15,6 +15,7 @@ To test our app, please do the following steps.
 4. Enter the sample username and password:
 
       username: nicole
+      
       password: 1234
       
 5. Click "Login" and you will see our user profile page.
